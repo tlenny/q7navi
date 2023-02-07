@@ -141,7 +141,7 @@
 				if (domain.startsWith('cn-northwest')) {
 					url = "http://kibana.prod.77hub.com/app/kibana#/discover?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(_source),filters:!(),index:'6aab3990-c54e-11ec-9d0d-3fe0837c3470',interval:auto,query:(language:kuery,query:'kubernetes.namespace_name%20:%20%22" + env_name + "%22'),sort:!())";
 				}else if(domain.startsWith('test-tx')){
-					url = "http://kibana.tencent.e7link.com/app/kibana#/discover?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(_source),filters:!(),index:'12c208d0-be50-11ec-ad8b-8f659869edd9',interval:auto,query:(language:kuery,query:'kubernetes.namespace_name%20:%20%22" + env_name + "%22'),sort:!())";
+					url = "http://kibana.tencent.e7link.com/app/kibana#/discover?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(_source),filters:!(),index:'12c208d0-be50-11ec-ad8b-8f659869edd9',interval:auto,query:(language:kuery,query:'namespace%20:%20%22" + env_name + "%22'),sort:!())";
 				}else {
 					url = "http://kibana.test.e7link.com/app/kibana#/discover?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(_source),filters:!(),index:'12c208d0-be50-11ec-ad8b-8f659869edd9',interval:auto,query:(language:kuery,query:'kubernetes.namespace_name%20:%20%22" + env_name + "%22'),sort:!())";
 				}
