@@ -140,7 +140,7 @@
 			} else if (app == 'elk') {
 				if (domain.startsWith('cn-northwest')) {
 					url = "http://kibana.prod.77hub.com/app/kibana#/discover?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(_source),filters:!(),index:'6aab3990-c54e-11ec-9d0d-3fe0837c3470',interval:auto,query:(language:kuery,query:'kubernetes.namespace_name%20:%20%22" + env_name + "%22'),sort:!())";
-				}else if(domain.startsWith('test-tx')){
+				}else if(domain.startsWith('test-tx') || domain.startsWith('nx-tencent')){
 					url = "http://kibana.tencent.e7link.com/app/kibana#/discover?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(_source),filters:!(),index:'12c208d0-be50-11ec-ad8b-8f659869edd9',interval:auto,query:(language:kuery,query:'namespace%20:%20%22" + env_name + "%22'),sort:!())";
 				}else {
 					url = "http://kibana.test.e7link.com/app/kibana#/discover?_g=(filters:!(),refreshInterval:(pause:!t,value:0),time:(from:now-15m,to:now))&_a=(columns:!(_source),filters:!(),index:'12c208d0-be50-11ec-ad8b-8f659869edd9',interval:auto,query:(language:kuery,query:'kubernetes.namespace_name%20:%20%22" + env_name + "%22'),sort:!())";
@@ -494,6 +494,38 @@
 						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'test-tx-22')">test-tx-22</a></li>
 						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'test-tx-23')">test-tx-23</a></li>
 						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'test-tx-24')">test-tx-24</a></li>
+					</ul>
+					<ul class="jj-list-con222" style="display: none;">
+
+						<div class="box_inner">
+							<img src="img/box_img1.jpg" alt="">
+							<div></div>
+							<div class="scoials">
+								<ul class="jj-list-con">
+									<li><a class="link-4" rel="nofollow" onclick="openPage('login')">登录</a></li>
+									<li><a class="link-4" rel="nofollow" onclick="openPage('GraphQL')">GraphQL</a></li>
+									<li><a class="link-4" rel="nofollow" onclick="openPage('elk')">ELK</a></li>
+									<li><a class="link-4" rel="nofollow"
+											onclick="openPage('global-GraphQL')">GBL-GQL</a></li>
+									<li><a class="link-4" rel="nofollow" onclick="openPage('qbos')">QBOS</a></li>
+								</ul>
+							</div>
+						</div>
+					</ul>
+				</div>
+				<div class="jj-list">
+					<div class="jj-list-tit">线下 · 腾讯云</div>
+					<ul class="jj-list-con" id="d1">
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent-rel1')">nx-tencent-rel1</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent1')">nx-tencent1</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent2')">nx-tencent2</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent3')">nx-tencent3</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent4')">nx-tencent4</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent5')">nx-tencent5</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent6')">nx-tencent6</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent7')">nx-tencent7</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-tencent8')">nx-tencent8</a></li>
+						
 					</ul>
 					<ul class="jj-list-con222" style="display: none;">
 
