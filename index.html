@@ -132,6 +132,8 @@
 			if (app == 'login') {
 				if (domain.startsWith('cn-northwest')) {
 					url = 'https://app.77hub.com/cn-global/login';
+				} else if(env_name.includes('aws')){
+					url = 'https://' + env_name + '-global.e7link.com/cn-global/login';
 				} else {
 					url = 'https://' + domain + '/cn-global/login';
 				}
@@ -148,6 +150,8 @@
 			} else if (app == 'global-GraphQL') {
 				if (domain.startsWith('cn-northwest')) {
 					url = 'http://identity.cn-northwest-global.77hub.com/index.html';
+				} else if(env_name.includes('aws')){
+					url = 'https://identity.' + env_name + '-global.e7link.com/index.html';
 				} else {
 					url = 'http://identity.' + domain + '/index.html';
 				}
@@ -267,21 +271,23 @@
 						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-dev-k8s')">nx-dev</a></li>
 						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-test-k8s')">nx-test</a></li>
 						<li><a class="link-3" rel="nofollow"
-								onclick="showPopover(this, 'nx-release-k8s')">nx-release</a></li>
+								onclick="showPopover(this, 'release-aws-1')">release</a></li>
 						<li><a class="link-3" rel="nofollow"
-								onclick="showPopover(this, 'nx-release-db-k8s')">nx-release-db</a></li>
-						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'nx-hotfix-k8s')">nx-hotfix</a>
+								onclick="showPopover(this, 'release-db-aws-1')">release-db</a></li>
+						<li><a class="link-3" rel="nofollow" onclick="showPopover(this, 'hotfix-aws-1')">hotfix</a>
 						</li>
 						<li><a class="link-3" rel="nofollow"
-								onclick="showPopover(this, 'nx-hotfix-db-k8s')">nx-hotfix-db</a></li>
+								onclick="showPopover(this, 'hotfix-db-aws-1')">hotfix-db</a></li>
 						<li><a class="link-3" rel="nofollow"
-								onclick="showPopover(this, 'nx-hotfix-inte-k8s')">nx-hotfix-inte</a></li>
+								onclick="showPopover(this, 'hotfix-inte-aws-1')">hotfix-inte</a></li>
 						<li><a class="link-3" rel="nofollow"
 								onclick="showPopover(this, 'nx-reports-k8s')">nx-reports</a></li>
 						<li><a class="link-3" rel="nofollow"
 								onclick="showPopover(this, 'stress-test-1')">stress-test-1</a></li>
 						<li><a class="link-3" rel="nofollow"
 								onclick="showPopover(this, 'stress-test-2')">stress-test-2</a></li>
+						<li><a class="link-3" rel="nofollow"
+								onclick="showPopover(this, 'stress-aws-cost-1')">stress-cost</a></li>
 					</ul>
 					<ul class="jj-list-con222" style="display: none;">
 						<div class="box_inner">
